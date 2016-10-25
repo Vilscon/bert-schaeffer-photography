@@ -1,0 +1,542 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* eof comments */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+	font-family: 'georgia', Times, Times New Roman, serif;
+	color: #676767;
+}
+
+/* appearance adjustments */
+
+/* Vimeo Responsive Embed */
+embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	z-index: 0;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+/* addons adjustments */
+
+/* packery */
+.publicationContainer .item {
+	margin-bottom: 20px;
+}
+
+.item {
+	max-width: 200px;
+}
+
+.item img {
+	min-width: 100%;
+	width: 100%;
+	max-width: 200px;
+}
+
+.gutter-sizer {
+	width: 1%;
+}
+
+@media only screen and (min-width:64.025em) {
+	.item {
+		min-width: 200px;
+	}
+
+}
+
+/* typography */
+h1 {
+	font-size: 4.5rem;
+	line-height: 6.75rem;
+	color: #555;
+	font-weight: 700;
+	padding-bottom: 2rem;
+}
+
+h1 .backIcon {
+	color: inherit;
+	font-size: 3rem;
+	padding-right: 10px;
+	opacity: .4;
+}
+
+h2 {
+	font-size: 3.5rem;
+	line-height: 5.25rem;
+}
+
+h3 {
+	font-size: 2.8rem;
+	line-height: 4.2rem;
+}
+
+.thick {
+	font-weight: 900;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+p {
+	font-size: 2rem;
+	line-height: 3rem;
+	margin-bottom: 2rem;
+	text-align: justify;
+}
+
+table {
+  font-size: 2rem;
+}
+
+table td:nth-child(2) {
+  padding-left: 10px;
+}
+
+@media only screen and (min-width:64em) {
+	p {
+	}
+
+}
+
+ul,
+ol {
+	font-size: 2rem;
+	line-height: 3rem;
+	margin-bottom: 2rem;
+	list-style-position: outside;
+	display: table;
+	margin-left: 1em;
+}
+
+/* general elements */
+.canvas {
+	height: 100%;
+	width: 100%;
+}
+
+.canvas a.portalLink {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.pageBG {
+	background-image: url('../images/homepage/homepage.jpg');
+	width: 100%;
+	height: calc(100% - 48px);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	z-index: -1;
+}
+
+.pageBG.notIndex {
+	background-size: cover !important;
+	opacity: .1;
+}
+
+.pageBG.opaque {
+	opacity: .1;
+}
+
+.pageBG.noBG {
+	opacity: 0;
+}
+
+.content {
+	padding: 120px 40px 80px 40px;
+	z-index: 10;
+}
+
+/*
+.content.photoPage {
+	padding: 40px 40px 80px 40px;
+}
+*/
+.limitedWidth {
+	max-width: 70rem;
+}
+
+.width800 {
+	max-width: 800px;
+}
+
+.twoColumns {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	font-size: initial;
+}
+
+p > a {
+	text-decoration: underline;
+}
+
+/* intro */
+#intro {
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 100%;
+	width: 100%;
+	color: white;
+	position: fixed;
+	opacity: 1;
+	transition: opacity .75s;
+	display: block;
+	z-index: 999;
+}
+
+#intro .content {
+	height: 128px;
+	position: fixed;
+	top: 50%;
+	margin-top: -65px;
+	width: 100%;
+	padding: 0 !important;
+}
+
+#intro .bertschaeffer {
+	opacity: 0;
+	position: relative;
+	font-size: 72px;
+	font-weight: 900;
+	white-space: nowrap;
+	left: calc(0% - 300px);
+	margin-left: -296px;
+	margin-top: -17px;
+	font-family: 'lato'
+}
+
+#intro .photography {
+	opacity: 0;
+	position: relative;
+	font-size: 72px;
+	font-weight: 300;
+	white-space: nowrap;
+	left: calc(100% + 300px);
+	margin-left: -300px;
+	margin-top: -17px;
+	letter-spacing: 6.6px;
+	font-family: 'lato'
+}
+
+#intro .photography,
+#intro .bertschaeffer {
+	-webkit-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+	-webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+}
+
+/* nav bar */
+nav {
+	position: fixed;
+	font-size: 1.6rem;
+	z-index: 10;
+	bottom: 0;
+	height: 48px;
+	background-color: rgba(255,255,255,0.8);
+	line-height: 48px;
+	width: 100%;
+	text-transform: uppercase;
+	display: inline;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.navItems {
+	display: inline;
+	transition: opacity .25s;
+	opacity: 1;
+	font-family: 'lato';
+}
+
+.navItems .defMenu,
+.navItems .portfolioMenu {
+	position: absolute;
+	right: 0;
+}
+
+.navItems .portfolioMenu {
+	display: none;
+}
+
+.navItems .defMenu > a,
+.navItems .portfolioMenu > a,
+.navItems .social {
+	float: right;
+	position: relative;
+	padding: 0 10px;
+	transition: all .5s;
+}
+
+@media only screen and (min-width:64.0625em) and (max-width:70em) {
+	.logo {
+		font-size: 24px !important;
+	}
+
+	.navItems .defMenu > a,
+	.navItems .portfolioMenu > a,
+	.navItems .social {
+		margin-left: 0px;
+		padding: 0 7px;
+		font-size: 0.6em;
+	}
+
+}
+
+@media only screen and (min-width:70.0625em) and (max-width:75em) {
+	.logo {
+		font-size: 24px !important;
+	}
+
+	.navItems .defMenu > a,
+	.navItems .portfolioMenu > a,
+	.navItems .social {
+		margin-left: 0px;
+		padding: 0 7px;
+		font-size: 0.75em;
+	}
+
+}
+
+@media only screen and (min-width:75.0625em) and (max-width:85em) {
+	.logo {
+		font-size: 24px !important;
+	}
+
+	.navItems .defMenu > a,
+	.navItems .portfolioMenu > a,
+	.navItems .social {
+		margin-left: 0px;
+		padding: 0 8px;
+		font-size: 0.8em;
+	}
+
+}
+
+@media only screen and (min-width:85.0625em) and (max-width:90em) {
+	.logo {
+		font-size: 24px !important;
+	}
+
+	.navItems .defMenu > a,
+	.navItems .portfolioMenu > a,
+	.navItems .social {
+		margin-left: 0px;
+		padding: 0 10px;
+		font-size: 1em;
+	}
+
+}
+
+@media only screen and (min-width:90.0625em) and (max-width:100em) {
+	.navItems a,
+	.navItems .social {
+		margin-left: 0px;
+	}
+
+}
+
+.logo {
+	font-size: 28px;
+	display: inline-block;
+	float: left;
+	padding: 0 !important;
+	margin: 0;
+	font-family: 'lato'
+}
+
+#mobileNavButton {
+	display: none;
+}
+
+/* socials */
+.navItems .social .socialCover {
+	transition: all .5s;
+	display: block;
+}
+
+.navItems .social:hover .socialCover {
+	margin-top: -50px;
+	opacity: 0;
+}
+
+.navItems .social:hover img {
+	display: inline-block;
+}
+
+.navItems .social img {
+	display: none;
+	max-height: 30%;
+	transition: all .3s;
+	padding-top: 9px;
+	padding-left: 10px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg version=!string!xmlns=!string!height=!string!><filter id=!string!><feColorMatrix type=!string!values=!string!/></filter></svg>#greyscale");
+}
+
+.navItems .social a {
+	display: inline-block;
+	height: 48px;
+}
+
+.navItems a img:hover {
+	opacity: .5;
+}
+
+/* homepage */
+
+/* projects */
+.projectItem {
+	width: 550px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	transition: all .5s;
+}
+
+.projectItem .projectCoverImage {
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+.projectX .projectCoverImage {
+	background-image: url('http://lorempixel.com/400/200')
+}
+
+p.projectTitle {
+	margin-bottom: 0;
+	font-size: 2.8rem;
+	line-height: 4.2rem;
+	font-weight: bold;
+}
+
+p.projectTitle:after {
+	content: '\f061 ';
+	font-family: FontAwesome;
+	font-size: 2rem;
+	color: #aaa;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	position: absolute;
+}
+
+.noProject p.projectTitle:after {
+	display: none;
+}
+
+.projectPage p {
+	max-width: 700px;
+}
+
+/* ProjectItems coverimages */
+.projectMasDesDames .projectCoverImage {
+	background-image: url('../images/projects/mas-des-dames/coverImage.jpg');
+}
+
+.projectLaSouche .projectCoverImage {
+	background-image: url('../images/projects/la-souche/coverImage.jpg');
+}
+
+.projectSweetRebels .projectCoverImage {
+	background-image: url('../images/projects/sweet-rebels/coverImage.jpg');
+}
+
+.projectPromovideo .projectCoverImage {
+	background-image: url('../images/projects/promovideo/coverImage.jpg');
+}
+
+.projectDroneVideo .projectCoverImage {
+	background-image: url('../images/projects/dronevideo/coverImage.jpg');
+}
+
+/* Galleries coverImages */
+.galleryFFA .projectCoverImage {
+	background-image: url('../images/galleries/AAF.jpg');
+}
+
+.galleryInez .projectCoverImage {
+	background-image: url('../images/galleries/Inez.png');
+}
+
+.galleryTheHague .projectCoverImage {
+	background-image: url('../images/galleries/TheHague.jpg');
+}
+
+.galleryParis .projectCoverImage {
+	background-image: url('../images/galleries/Paris.jpg');
+}
+
+.galleryGinvi .projectCoverImage {
+	background-image: url('../images/galleries/ginvi.jpg');
+}
+
+/* other things */
+.otherPublications {
+	margin-top: 1rem;
+	max-width: 800px;
+}
+
+.otherPublications > * {
+	font-size: 1.6rem !important;
+	line-height: 2.4rem;
+}
+
+body.homepage {
+	background-color: black;
+}
+
+.homepage nav {
+	background-color: transparent;
+	color: white !important;
+}
+

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title>Promotional Video | Bert Schaeffer Photography</title>
+			<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/mobile.css" />
+</head>
+<body>
+	
+	<div class="canvas">	
+		<div class="bgOverlay"></div> <!-- Dark overlay when menu open (mobile) -->
+		<div class="pageBG notIndex"></div> <!-- Default background -->
+		<div class="content textPage projectPage"><!-- Main body content -->
+			<h1><a href="../projects.html" class="backIcon"><i class="fa fa-arrow-left"></i></a> Promotional video</h1>
+			<p>Together with a cameraman I shot my first promo-video which has been captured during a professional photoshoot. In this video I guide you in my story and the proces.</p>
+			
+			<div class="Container">
+				<iframe src='https://player.vimeo.com/video/124101777?autoplay=1' width="600px" height="350px" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</div>			
+		</div>
+	</div>	
+
+
+
+
+
+
+
+	
+	<nav>	
+		<a href="../index.html" class="logo"><div ><span class="thick">BERT SCHAEFFER</span> <span class="thin">PHOTOGRAPHY</span></div></a>
+		<div class="navItems hidden">
+			<div class="defMenu">
+				<div class="social"><span class="socialCover">Socials</span>
+					<a href="https://www.instagram.com/bert_schaeffer/" target="_blank" data-title="Instagram"><img src="../images/social/instagram.png" alt=""></a>
+					<a href="https://www.facebook.com/bert.schaeffer.7" target="_blank" data-title="Facebook"><img src="../images/social/facebook.png" alt=""></a>
+					<a href="https://twitter.com/extrieur" target="_blank" data-title="Twitter"><img src="../images/social/twitter.png" alt=""></a>
+					<a href="http://www.modelmayhem.com/708436" target="_blank" data-title="ModelMayhem"><img src="../images/social/modelmayhem.png" alt=""></a>
+					<a href="http://iscs.nl" target="_blank" data-title="Developed by"><img src="../images/social/iscs.png" alt=""></a>
+				</div>
+
+				<a href="../contact.html">Contact</a>
+				<a href="../bio.html">Bio</a>
+				<a href="../galleries.html">Galleries</a>
+				<a href="../publications.html">Publications & Media</a>
+				<a href="../projects.html">Projects</a>
+				<a href="../sales.html">Sales</a>
+				<a href="../model.html">Photography</a>
+				<a href="../index.html">Home</a>
+			</div>
+			<div class="portfolioMenu">
+				<a href='#'>Landscape</a>
+				<a href='../model.html'>Model</a>
+				<a href='#' id='navDefault'>X Close menu</a>			
+			</div>
+		</div>
+		<a href="#" id="mobileNavButton">Menu</a>
+	</nav>
+	
+	<script src="../js/jquery-1.11.2.min.js" charset="utf-8"></script>
+	<script src="../js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="../addons/imagesLoaded/imagesloaded.pkgd.min.js" charset="utf-8"></script>
+	<script src="../addons/packery/packery.pkgd.min.js" charset="utf-8"></script>
+	<link href="../addons/flare/jquery.pixelentity.flare.min.css" rel="stylesheet"/>
+	<script src="../addons/flare/jquery.pixelentity.flare.min.js"></script>
+	<script>
+		$(function () {
+			$('.projectContainer a').each(function () {
+				var $link = $(this),
+					title = $link.attr('alt'),
+					thumb = '../images/projects/mas-des-dames/thumbs/' + title + '.jpg';
+					retinaThumb = '../images/projects/mas-des-dames/thumbs-retina/' + title + '.jpg';
+					
+			// regular tags
+			$link.attr('data-target', 'flare');
+			$link.attr('data-flare-scale', 'fitmax');
+			$link.attr('data-flare-gallery', 'main');
+			$link.addClass('item');
+			$link.attr('href', '../images/projects/mas-des-dames/full/' + title + '.jpg');
+		
+			// Retina tags
+			if (window.devicePixelRatio > 1) { 					// If the device has retina graphics
+				$link.attr('data-flare-thumb', retinaThumb);
+				$link.attr('href', '../images/projects/mas-des-dames/full-retina/' + title + '.jpg');
+				$link.append($('<img>', {
+			      src     : '../images/projects/mas-des-dames/thumbs-retina/' + title + '.jpg'
+			    }));
+			} else {											// If the device does not has retina graphics
+				$link.attr('data-flare-thumb', thumb);
+				$link.attr('href', '../images/projects/mas-des-dames/full/' + title + '.jpg');
+				$link.append($('<img>', {
+			      src     : '../images/projects/mas-des-dames/thumbs/' + title + '.jpg'
+			    }));
+			}
+						
+			});
+		});
+		
+		$(document).ready(function(){
+		
+		    var cnt = $("img").length;
+		    $("img").one("load", function() {
+		        cnt--;
+		
+		        // If all images are loaded, init Packery
+		        if (cnt === 0)
+		        {
+		            $(".projectContainer").packery({
+		            	itemSelector: ".item",
+						gutter: ".gutter-sizer",
+						percentPosition: true
+		            });
+		        }
+		
+		    }).each(function() {
+		      if(this.complete) $(this).load();
+		    });
+		
+		});
+
+	</script>
+	<script src="../addons/tipper/src/jquery.fs.tipper.js" charset="utf-8"></script>
+	<link href='../addons/tipper/jquery.fs.tipper.min.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../addons/fontAwesome/css/font-awesome.min.css">
+	<script src="../js/script.js" charset="utf-8"></script>
+
+</body>
+</html>

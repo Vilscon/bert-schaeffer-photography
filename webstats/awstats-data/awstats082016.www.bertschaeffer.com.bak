@@ -1,0 +1,333 @@
+AWSTATS DATA FILE 7.2 (build 1.992)
+# If you remove this file, all statistics for date 201608 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.www.bertschaeffer.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2001                
+POS_TIME 2669                
+POS_VISITOR 7236                
+POS_DAY 8624                
+POS_DOMAIN 3307                
+POS_LOGIN 3635                
+POS_ROBOT 3790                
+POS_WORMS 4366                
+POS_EMAILSENDER 4497                
+POS_EMAILRECEIVER 4640                
+POS_SESSION 8734                
+POS_SIDER 8914                
+POS_FILETYPES 4775                
+POS_DOWNLOADS 4946                
+POS_OS 4994                
+POS_BROWSER 5159                
+POS_SCREENSIZE 5475                
+POS_UNKNOWNREFERER 5549                
+POS_UNKNOWNREFERERBROWSER 5728                
+POS_ORIGIN 5810                
+POS_SEREFERRALS 5946                
+POS_PAGEREFS 6101                
+POS_SEARCHWORDS 6337                
+POS_KEYWORDS 6489                
+POS_MISC 2333                
+POS_ERRORS 6548                
+POS_CLUSTER 3491                
+POS_SIDER_404 6646                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20160803000237 293 65038 8737587541313
+FirstTime 0
+LastTime 20160802234634
+LastUpdate 20160803004601 293 0 293 0 0
+TotalVisits 32                  
+TotalUnique 32                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 35                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 8 10 18071
+1 1 1 1151 2 2 1383
+2 41 41 129888 4 4 12672
+3 17 17 68706 2 3 1182
+4 1 1 1151 4 4 4161
+5 0 1 644 1 2 3779
+6 0 0 0 0 0 0
+7 0 0 0 3 4 5501
+8 1 1 1151 4 5 6652
+9 2 2 2302 1 1 1151
+10 0 0 0 3 5 678542
+11 3 3 3453 8 11 13423
+12 21 21 66528 3 4 1414
+13 4 158 3725721 6 16 14540
+14 0 0 0 4 5 3484
+15 3 175 7707298 3 7 4149
+16 1 1 3168 5 6 5965
+17 3 24 880688 3 8 8368
+18 1 1 1900 1 1 1151
+19 2 2 5128 2 7 9441
+20 2 3 7198 2 7 9441
+21 2 19 788571 1 3 1383
+22 0 0 0 6 9 9217
+23 23 23 71656 4 6 12095
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+us 44 44 139392
+br 39 39 123552
+cn 16 19 30477
+ca 14 14 65253
+nl 12 375 13102158
+th 1 1 1151
+fr 1 1 1151
+jp 1 1 3168
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 13
+googlebot 47 62525 20160803000237 4
+mj12bot 18 34564 20160802230331 7
+yandex 12 11572 20160802220918 2
+bingbot 11 10421 20160802203201 2
+robot 7 6661 20160802174706 2
+seznambot 4 62 20160802120036 2
+no_user_agent 2 4319 20160802164908 0
+bot[\s_+:,\.\;\/\\-] 2 3699 20160802002304 0
+ia_archiver 2 3199 20160802222434 1
+unknown 1 31 20160802035055 1
+facebook 1 673041 20160802100501 0
+exabot 1 1151 20160801070902 0
+curl 1 3168 20160801023156 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+css 24 44319 0 0
+gif 1 1737 0 0
+png 24 39017 0 0
+jpg 285 12606060 0 0
+js 32 393320 0 0
+html 128 381849 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+linuxandroid 1 1
+winnt 185 18
+win7 157 4
+win8 3 3
+Unknown 13 13
+winxp 3 3
+winlong 81 81
+macosx 51 5
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 14
+iphone 23 2
+chrome37.0.2062.124 2 2
+firefox13.0 16 16
+firefox16.0 65 65
+firefox0.10.1 1 1
+msie10.0 155 2
+firefox3.6 1 1
+chrome45.0.2454.93 20 17
+firefox6.0.2 1 1
+chrome19.0.1061.1 1 1
+mozilla 15 15
+safari9.1.2 27 2
+chrome51.0.2704.103 166 2
+chrome17.0.1025.133 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Mozilla/5.0_(compatible;_Dataprovider/6.101;__https://www.dataprovider.com/) 20160802035106
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 121 124
+From1 0 0
+From2 1 1
+From3 3 3
+From4 3 366
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 3
+https://www.facebook.com 1 1
+http://www.crosslinemedia.nl 1 1
+http://m.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+206 3 9504
+404 14 3248
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 7
+/tmp/sfx.php 1 -
+/projecten/la_souche/ 1 -
+/portfolio_landscaping.html 2 -
+/projecten/masdesdames/ 1 -
+/images/social/instagram.png 7 http://www.bertschaeffer.com/model.html
+/publicatiemateriaal/zoomnl-2012-oktober-bertschaeffer.pdf 1 -
+/projecten/masdesdames/masdesdames.html 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 35
+186.202.153.58 39 39 123552 20160801025923
+50.87.144.68 21 21 66528 20160801233317
+192.185.2.55 21 21 66528 20160802122238
+167.114.172.223 14 14 65253 20160802035107
+77.249.224.11 2 19 787204 20160802210739
+46.29.240.5 2 155 3718615 20160802134545
+80.246.188.132 2 2 6336 20160802024224
+193.84.143.238 2 166 7691960 20160801151947
+213.93.176.84 2 23 879537 20160802170500
+46.229.170.197 1 1 3168 20160802234634
+202.46.51.166 1 1 1151 20160802030039
+202.46.52.173 1 1 1151 20160801115858
+202.46.49.195 1 1 1151 20160801043141
+202.46.55.140 0 1 2628 
+202.46.58.131 0 1 2879 
+202.46.58.17 1 1 1151 20160801080300
+202.46.54.20 1 1 1151 20160801115858
+202.46.53.42 1 1 1151 20160802113516
+107.183.242.3 1 1 3168 20160802164908
+202.46.58.137 1 1 1151 20160802095435
+202.46.56.65 1 1 1960 20160801130653
+202.46.50.187 1 1 1900 20160801182128
+202.46.54.31 1 1 2518 20160802134250
+202.46.56.98 1 1 1151 20160802095435
+202.46.49.191 0 1 644 
+202.46.48.197 1 1 1960 20160802233213
+77.160.17.173 1 9 15338 20160802154307
+211.0.145.110 1 1 3168 20160801200535
+202.46.51.160 1 1 1151 20160802012509
+202.46.52.158 1 1 2518 20160802215342
+195.154.146.225 1 1 1151 20160802032034
+202.46.57.164 1 1 1151 20160801170644
+101.51.112.237 1 1 1151 20160802033040
+202.46.48.18 1 1 1960 20160801192742
+89.30.144.141 1 1 3168 20160801195451
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20160801 72 236 7899951 13
+20160802 56 258 5566351 19
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+0s-30s 29
+30s-2mn 1
+5mn-15mn 1
+15mn-30mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 12
+/ 98 274158 26 22
+/?login=cmd 11 34848 0 1
+/sales.html 5 12722 3 4
+/publications.html 3 12491 2 2
+/model.html 3 14146 0 2
+/projects/mas-des-dames.html 2 7377 1 1
+/projects/promovideo.html 1 5161 0 0
+/bio.html 1 3318 0 0
+/galleries.html 1 3893 0 0
+/projects/la-souche.html 1 5597 0 0
+/contact.html 1 3509 0 0
+/projects.html 1 4629 0 0
+END_SIDER

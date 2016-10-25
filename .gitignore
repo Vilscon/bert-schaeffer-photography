@@ -1,0 +1,6 @@
+# Exclude any PSD/AI source
+*.psd
+*.ai
+images/homepage
+images/portfolio
+images/projects
